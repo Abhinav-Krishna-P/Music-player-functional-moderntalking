@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url(Firlest-Regular.otf);
+}
+@font-face {
+    font-family: mysecondFont;
+    src: url(Poppins-Regular.ttf)
+}
+body{
+    background-image: url(./background/wp3282964.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    /* backdrop-filter: blur(2px); */
+}
+header{
+    width: 100vw;
+    margin-top: 0px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    color: rgba(255, 255, 255, 0.842);
+    background-color: rgba(0, 0, 0, 0.603);
+    backdrop-filter: blur(4px);
+}
+header #logo{
+  width: 150px;
+  height: inherit;
+}
+header img{
+    width: 100%;
+    height: 100%;
+}
+header h1{
+    font-size: 30px;
+    color: rgba(153, 211, 60, 0.863);
+    font-family:mysecondFont;
+}
+header p{
+    margin-left: 270px;
+    font-size: 110px;
+    font-family:myFirstFont;
+    color:  #ffdde1; 
+}
+header span{
+    font-size: 30px;
+     color: rgba(153, 211, 60, 0.863);
+     font-family:mysecondFont;
+     margin-left: 430px;
+
+}
+#main-container{
+
+    height: 86vh;
+    width: 100%;
+    display: flex ;
+    align-items: center;
+    justify-content: space-around;
+    /* gap: 40px; */
+    
+}
+#main-container #left-side-main{
+    text-align: center;
+    height: 74vh;
+    width: 25%;
+    border-radius: 20px;
+    padding-left: 30px ;
+    padding-top: 30px;
+    margin-left: -70px;
+    background-color: rgba(0, 0, 0, 0.747);
+    box-shadow: 0px 0px 15px rgba(224, 217, 217, 0.63);
+    backdrop-filter: blur(10px);
+}
+#main-container #left-side-main #chericheri,#youarenotalone,#brotherlouie,#youaremyheart{
+    /* border: 1px solid white; */
+    height: 110px;
+    width: 420px;
+    margin-top: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.534);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.178);
+    font-family: sans-serif;
+}
+#main-container #left-side-main #chericheri:hover,#youarenotalone:hover,#brotherlouie:hover,#youaremyheart:hover{
+     scale: 1.04;
+     background-color:rgba(0, 0, 0, 0.767); ;
+
+}
+#main-container #left-side-main img{
+    height: 90px;
+    border-radius: 15px;
+    margin-left: 15px;
+   
+}
+
+#main-container #center-main{
+    text-align: center;
+    padding: 30px 35px;
+    height: 78vh;
+    width: 28%;
+    border-radius: 20px;
+    background-color: rgba(51, 30, 30, 0.685);
+    backdrop-filter: blur(30px);
+    border: 5px solid rgba(240, 235, 235, 0.884);
+    box-shadow: 0px 0px 20px solid rgb(8, 8, 8);
+    display: flex;
+    flex-direction: column; /* Arrange divs vertically */ 
+    align-items: center; /* Center divs horizontally */
+
+}
+
+#main-container #center-main nav{
+    height: 50px;
+    width: 450px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .circle{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     background-color: white;
+     cursor: pointer;
+}
+nav .circle:hover{
+    scale: 1.01;
+    box-shadow: 0px 0px 10px  rgba(233, 229, 229, 0.336);
+}
+
+#main-container #center-main #main-cover{
+    border: 7px solid white;
+    border-radius: 50%;
+    width: 280px;
+    height: 280px;
+     margin-top: 60px; 
+
+   
+}
+
+
+#main-container #center-main #main-cover img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+}
+
+#songtitle{
+    margin-top: 30px;
+    color: rgba(255, 255, 255, 0.863);
+    font-family: sans-serif;
+    font-size: 25px;
+}
+#filmname{
+    color: rgba(255, 255, 255, 0.507);
+    font-family: sans-serif;
+    margin-top: 10px;
+}
+
+#center-main #progress{
+    width: 450px;
+    margin-top: 40px;
+    appearance: none;
+    border-radius: 50px;
+    height: 6px;
+    background: rgba(234, 234, 236, 0.322);
+    cursor: pointer;
+}
+
+#center-main #progress::-webkit-slider-thumb{
+    appearance: none;
+    background-color: rgb(12, 12, 12);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.897);
+
+}
+
+#center-main #controls {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin-right: -6px;
+}
+#center-main #controls div{
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#masterplay{
+    font-size: 25px;
+    margin-left: 1px;
+}
+
+#center-main #controls div:nth-child(2){
+    background-color: rgb(6, 223, 103);
+    scale: 1.5;
+}
+#center-main #controls div:nth-child(1):hover{
+    scale: 1.02;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.267);
+}
+
+#center-main #controls div:nth-child(3):hover{
+    scale: 1.02;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.267);
+}
+
+
+#main-container #right-side-main{
+    text-align: center;
+    height: 74vh;
+    width: 25%;
+    border-radius: 20px;
+    padding-left: 30px ;
+    padding-top: 30px;
+    margin-left: -70px;
+    background-color: rgba(0, 0, 0, 0.747);
+    box-shadow: 0px 0px 15px rgba(224, 217, 217, 0.63);
+    backdrop-filter: blur(10px);
+}
+#main-container #right-side-main #atlantiscalling,#justwetwo,#sexysexylover,#luckyguy{
+    /* border: 1px solid white; */
+    height: 110px;
+    width: 420px;
+    margin-top: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.534);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.178);
+    font-family: sans-serif;
+}
+#main-container #right-side-main img{
+    height: 90px;
+    border-radius: 15px;
+    margin-left: 15px;
+   
+}
+#main-container #right-side-main #atlantiscalling:hover,#justwetwo:hover,#sexysexylover:hover,#luckyguy:hover{
+    scale: 1.04;
+     background-color:rgba(0, 0, 0, 0.767); 
+}
